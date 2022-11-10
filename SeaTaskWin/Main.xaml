@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SeaTaskWin" 
         xmlns:viewmodel="clr-namespace:SeaTaskWin.ViewModel"
         mc:Ignorable="d"
-        Title="SeaTask" ResizeMode="NoResize" Height="275" Width="450">
+        Title="SeaTask" Loaded="{Binding LoadFirst}" ResizeMode="NoResize" Height="275" Width="450">
     <Window.DataContext>
         <viewmodel:ViewModelMain/>
     </Window.DataContext>

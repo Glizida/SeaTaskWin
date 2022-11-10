@@ -17,7 +17,7 @@ namespace SeaTaskWin.ViewModel
 
         //-----------------------------------------------------------------------------//
 
-        ViewModelMain ViewModelMain;
+
     
         //-----------------------------------------------------------------------------//
 
@@ -41,7 +41,7 @@ namespace SeaTaskWin.ViewModel
                     (
                         _registrationCommand = new RelayCommand(obj =>
                         {
-                            ViewModelMain.
+
                         }
                         )
                      );

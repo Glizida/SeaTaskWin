@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using SeaTaskWin.CustomUserControl;
 
 namespace SeaTaskWin.ViewModel
 {
@@ -26,6 +28,21 @@ namespace SeaTaskWin.ViewModel
             }
         }
 
-        
+        private RelayCommand _loadFirst;
+        public RelayCommand LoadFirst
+        {
+            get
+            {
+                return _loadFirst ??
+                    (
+                        _loadFirst = new RelayCommand(obj =>
+                        {
+                            UserControl userControl = new CustomUserControl.Login();
+                            SetNewContent(userControl);
+                        }
+                        )
+                     );
+            }
+        }
     }
 }
