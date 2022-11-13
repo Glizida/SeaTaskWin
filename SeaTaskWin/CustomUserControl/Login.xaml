@@ -27,7 +27,7 @@
                 </DockPanel>
                 <Grid Margin="10" VerticalAlignment="Bottom">
                     <Button Margin="10,10,0,0" Content="Регистрация" HorizontalAlignment="Left"></Button>
-                    <Button  Margin="0,10,10,0" HorizontalAlignment="Right" Content="Вход" Command="{Binding ShowrelayCommand}"></Button>
+                    <Button  Margin="0,10,10,0" HorizontalAlignment="Right" Content="Вход" Command="{Binding AuthorizationCommand}"></Button>
                 </Grid>
             </StackPanel>
         </Grid>

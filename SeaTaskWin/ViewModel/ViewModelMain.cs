@@ -28,6 +28,13 @@ namespace SeaTaskWin.ViewModel
             }
         }
 
+
+        public ViewModelMain()
+        {
+            UserControl userControl = new CustomUserControl.Login();
+            SetNewContent(userControl);
+        }
+
         private RelayCommand _loadFirst;
         public RelayCommand LoadFirst
         {
@@ -37,6 +44,7 @@ namespace SeaTaskWin.ViewModel
                     (
                         _loadFirst = new RelayCommand(obj =>
                         {
+                            
                             UserControl userControl = new CustomUserControl.Login();
                             SetNewContent(userControl);
                         }
